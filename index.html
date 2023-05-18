@@ -1,36 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>My GitHub Page</title>
-  <link rel="stylesheet" href="styles.css">
   <style>
-    /* Additional inline styles for positioning the photo */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      color: #fff;
+      background-color: #222;
+    }
+
+    /* Add the previous CSS styles for the dark and creative theme */
+
+    h1, h2 {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .hero {
+      background-color: #333;
+      padding: 60px 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn {
+      background-color: #ff5500;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #ff4400;
+    }
+
+    .about {
+      background-color: #444;
+      padding: 60px 0;
+    }
+
+    .about ul {
+      list-style-type: disc;
+      padding-left: 20px;
+    }
+
+    .contact-details a {
+      color: #ff5500;
+    }
+
     .photo {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
+      max-width: 200px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
     }
   </style>
 </head>
-
 <body>
+
   <header>
     <div class="container">
       <h1>Welcome to My GitHub Page</h1>
       <img src="PHOTO.png" alt="My Photo" class="photo">
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#" onclick="showContactDetails()">Contact</a></li>
-        </ul>
-      </nav>
     </div>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Projects</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#" onclick="showContactDetails()">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <section class="hero">
@@ -69,31 +121,12 @@
     </div>
   </footer>
 
-  <div class="water-bg">
-    <div class="container">
-      <!-- Bubbles -->
-      <div class="bubble-container">
-        <!-- Add your bubble elements here -->
-      </div>
-    </div>
-  </div>
-
   <script>
     function showContactDetails() {
       var contactDetails = document.getElementById("contactDetails");
       contactDetails.style.display = "block";
     }
-
-    // Generate random positions for the bubbles
-    var bubbles = document.querySelectorAll(".bubble");
-    bubbles.forEach(function(bubble) {
-      var randomDelay = Math.random() * 5;
-      bubble.style.animationDelay = randomDelay + "s";
-      bubble.style.left = Math.random() * 100 + "%";
-      bubble.style.top = Math.random() * 100 + "%";
-    });
   </script>
 
 </body>
-
 </html>
