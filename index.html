@@ -14,24 +14,57 @@
       background-color: #222;
     }
 
-    /* Add the previous CSS styles for the dark and creative theme */
-
-    h1, h2 {
-      color: #fff;
-    }
+    /* Water Theme Styles */
 
     .container {
       max-width: 800px;
       margin: 0 auto;
       padding: 40px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .water-bg {
+      background: linear-gradient(180deg, #055799, #0274a6);
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      z-index: -1;
+    }
+
+    .bubble {
+      position: absolute;
+      width: 20px;
+      height: 20px;
+      background-color: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      animation: bubbleAnimation linear infinite;
+      animation-duration: 4s;
+      animation-timing-function: ease-in-out;
+    }
+
+    @keyframes bubbleAnimation {
+      0% {
+        transform: translateY(0);
+      }
+      50% {
+        transform: translateY(-100%);
+      }
+      100% {
+        transform: translateY(0);
+      }
+    }
+
+    /* Other Styles */
+
+    h1, h2 {
+      color: #fff;
     }
 
     .hero {
-      background-color: #333;
       padding: 60px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     .btn {
@@ -47,7 +80,6 @@
     }
 
     .about {
-      background-color: #444;
       padding: 60px 0;
     }
 
@@ -127,6 +159,32 @@
       contactDetails.style.display = "block";
     }
   </script>
+
+  <div class="water-bg">
+    <div class="container">
+      <!-- Bubbles -->
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+      <div class="bubble"></div>
+    </div>
+  </div>
 
 </body>
 </html>
