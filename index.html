@@ -60,23 +60,23 @@
 
     @keyframes bubbleAnimation {
       0% {
-        transform: translateY(100%);
+        transform: translateY(100%) translateX(-50%);
         opacity: 0.8;
       }
       25% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(50%);
         opacity: 1;
       }
       50% {
-        transform: translateY(-50%);
+        transform: translateY(-50%) translateX(-50%);
         opacity: 0.8;
       }
       75% {
-        transform: translateY(0);
+        transform: translateY(0) translateX(-50%);
         opacity: 1;
       }
       100% {
-        transform: translateY(100%);
+        transform: translateY(100%) translateX(50%);
         opacity: 0.8;
       }
     }
@@ -130,15 +130,15 @@
     <div class="container">
       <h1>Welcome to My GitHub Page</h1>
       <img src="PHOTO.png" alt="My Photo" class="photo">
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#" onclick="showContactDetails()">Contact</a></li>
+        </ul>
+      </nav>
     </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#" onclick="showContactDetails()">Contact</a></li>
-      </ul>
-    </nav>
   </header>
 
   <section class="hero">
@@ -211,11 +211,13 @@
       contactDetails.style.display = "block";
     }
 
-    // Randomize bubble positions
-    var bubbles = document.querySelectorAll('.bubble');
+    // Randomize the bubble positions
+    var bubbles = document.querySelectorAll(".bubble");
     bubbles.forEach(function(bubble) {
       var randomDelay = Math.random() * 5;
-      bubble.style.animationDelay = randomDelay + 's';
+      bubble.style.animationDelay = randomDelay + "s";
+      bubble.style.left = Math.random() * 100 + "%";
+      bubble.style.top = Math.random() * 100 + "%";
     });
   </script>
 
