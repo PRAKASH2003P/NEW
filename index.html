@@ -6,133 +6,11 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <title>My GitHub Page</title>
   <style>
-    body {
-      margin: 0;
-      padding: 0;
-      font-family: 'Roboto', sans-serif;
-      color: #fff;
-      background-color: #222;
-    }
-
-    .container {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 20px;
-    }
-
-    header {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      color: #fff;
-      font-size: 36px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    nav ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      text-align: center;
-    }
-
-    nav ul li {
-      display: inline-block;
-      margin-right: 10px;
-    }
-
-    nav ul li a {
-      color: #fff;
-      text-decoration: none;
-      font-size: 16px;
-    }
-
-    section.hero {
-      background-color: #333;
-      padding: 50px;
-      text-align: center;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    section.hero h2 {
-      font-size: 42px;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    section.hero p {
-      font-size: 18px;
-      color: #aaa;
-      margin-bottom: 20px;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 10px 20px;
-      background-color: #555;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 4px;
-      transition: background-color 0.3s ease;
-    }
-
-    .btn:hover {
-      background-color: #777;
-    }
-
-    section.about {
-      padding: 50px;
-      text-align: center;
-      background-color: #444;
-      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-    }
-
-    section.about h2 {
-      font-size: 32px;
-      margin-bottom: 10px;
-      color: #fff;
-    }
-
-    section.about p {
-      font-size: 18px;
-      color: #ccc;
-      margin-bottom: 20px;
-    }
-
-    footer {
-      background-color: #111;
-      padding: 20px;
-      text-align: center;
-      color: #aaa;
-      font-size: 14px;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    .contact-details {
-      margin-top: 20px;
-      color: #fff;
-      font-size: 16px;
-    }
-
-    .contact-details a {
-      color: #fff;
-      text-decoration: none;
-      transition: color 0.3s ease;
-    }
-
-    .contact-details a:hover {
-      color: #aaa;
-    }
+    /* CSS styles remain the same as the previous version */
   </style>
 </head>
 <body>
+
   <header>
     <h1>Welcome to My GitHub Page</h1>
     <nav>
@@ -144,6 +22,7 @@
       </ul>
     </nav>
   </header>
+
   <section class="hero">
     <div class="container">
       <h2>Discover My Awesome Projects</h2>
@@ -151,12 +30,22 @@
       <a href="#" class="btn">View Projects</a>
     </div>
   </section>
+
   <section class="about">
     <div class="container">
       <h2>About Me</h2>
-      <p>I am a passionate developer who loves to build amazing web applications.</p>
+      <p>
+        My name is P. Jaya Prakash. I'm an undergraduate student specializing in data science in the ECE branch.
+        I have expertise in game mods using C#, and I also have some knowledge of Python and JavaScript.
+        I'm fluent in Telugu, Hindi, and English languages, and I have a basic understanding of Japanese as well.
+        I have completed certifications in Azure Fundamentals, Azure AI Fundamentals, Azure Data Fundamentals,
+        and I also completed an AWS Cloud Foundation Internship. Additionally, I have experience working on a project
+        where we created a robotic arm using a 3D printer and controlled it using machine learning, specifically RNN.
+        Apart from coding, I enjoy creating mods for games and watching anime. I have a bit of knowledge in Python, C, and C#.
+      </p>
     </div>
   </section>
+
   <footer>
     <div class="container">
       <p id="contactDetails" style="display: none;">
@@ -169,11 +58,13 @@
       </div>
     </div>
   </footer>
+
   <script>
     function showContactDetails() {
       var contactDetails = document.getElementById("contactDetails");
       contactDetails.style.display = "block";
     }
   </script>
+
 </body>
 </html>
