@@ -3,21 +3,25 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-  <title>My GitHub Page</title>
+  <title>Visually Appealing Webpage</title>
   <style>
     body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
-      font-family: 'Roboto', sans-serif;
-      color: #fff;
-      background-color: #222;
     }
 
-    /* Add the previous CSS styles for the dark and creative theme */
-
-    h1, h2 {
+    header {
+      background-color: #333;
       color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 32px;
+      margin: 0;
     }
 
     .container {
@@ -27,106 +31,65 @@
     }
 
     .hero {
-      background-color: #333;
-      padding: 60px 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
+      background-color: #ff5500;
+      color: #fff;
+      padding: 60px;
+      text-align: center;
+    }
+
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      margin-bottom: 40px;
     }
 
     .btn {
-      background-color: #ff5500;
-      color: #fff;
+      background-color: #fff;
+      color: #ff5500;
       padding: 12px 24px;
       border-radius: 4px;
       text-decoration: none;
+      font-size: 16px;
     }
 
     .btn:hover {
       background-color: #ff4400;
+      color: #fff;
     }
 
-    .about {
-      background-color: #444;
-      padding: 60px 0;
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
     }
 
-    .about ul {
-      list-style-type: disc;
-      padding-left: 20px;
-    }
-
-    .contact-details a {
-      color: #ff5500;
-    }
-
-    .photo {
-      max-width: 200px;
-      display: block;
-      margin: 20px auto;
-      border-radius: 50%;
+    footer p {
+      margin: 0;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="container">
-      <h1>Welcome to My GitHub Page</h1>
-      <img src="PHOTO.png" alt="My Photo" class="photo">
-    </div>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Projects</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#" onclick="showContactDetails()">Contact</a></li>
-      </ul>
-    </nav>
+    <h1>Welcome to My Webpage</h1>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h2>Discover My Awesome Projects</h2>
-      <p>Check out my latest projects on GitHub and explore the world of coding.</p>
-      <a href="#" class="btn">View Projects</a>
-    </div>
-  </section>
-
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <ul>
-        <li>I'm currently an Undergraduate student in ECE branch, specializing in data science.</li>
-        <li>I can do game mods using C#, and I have some knowledge of Python and JavaScript.</li>
-        <li>I'm fluent in Telugu, Hindi, and English languages, and I have a basic understanding of Japanese.</li>
-        <li>I have completed certifications in Azure Fundamentals, Azure AI Fundamentals, Azure Data Fundamentals, and AWS Cloud Foundation Internship.</li>
-        <li>I have worked on a project where we created a robotic arm using a 3D printer and controlled it using machine learning, specifically RNN.</li>
-        <li>I enjoy creating mods for games and watching anime.</li>
-        <li>I have knowledge of Python, C, and C# programming languages.</li>
-      </ul>
+      <h2>Discover an Amazing Experience</h2>
+      <p>Explore the world of creativity and innovation.</p>
+      <a href="#" class="btn">Get Started</a>
     </div>
   </section>
 
   <footer>
-    <div class="container">
-      <p id="contactDetails" style="display: none;">
-        &copy; 2023 My GitHub Page. All rights reserved. <br>
-        Contact: <a href="tel:+918309121235">+91 8309121235</a> |
-        Email: <a href="mailto:pinnintijayaprakash2003@gmail.com">pinnintijayaprakash2003@gmail.com</a>
-      </p>
-      <div class="contact-details">
-        <a href="#" onclick="showContactDetails()">Show Contact Details</a>
-      </div>
-    </div>
+    <p>&copy; 2023 My Webpage. All rights reserved.</p>
   </footer>
-
-  <script>
-    function showContactDetails() {
-      var contactDetails = document.getElementById("contactDetails");
-      contactDetails.style.display = "block";
-    }
-  </script>
 
 </body>
 </html>
