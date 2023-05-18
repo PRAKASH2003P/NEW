@@ -3,25 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visually Appealing Webpage</title>
+  <title>Mesmerizing Webpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   <style>
+    * {
+      box-sizing: border-box;
+    }
+
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
-    }
-
-    header {
-      background-color: #333;
+      font-family: 'Roboto', sans-serif;
+      background: linear-gradient(to bottom right, #1e5799, #7db9e8);
       color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    h1 {
-      font-size: 32px;
-      margin: 0;
     }
 
     .container {
@@ -30,13 +24,26 @@
       padding: 40px;
     }
 
+    header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    header h1 {
+      font-size: 36px;
+      margin: 0;
+      padding: 20px;
+      background: linear-gradient(to bottom, #33a5e7, #005b99);
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    }
+
     .hero {
-      background-color: #ff5500;
-      color: #fff;
+      background: radial-gradient(circle, #00b3ff, #002b5c);
       padding: 60px;
       text-align: center;
-      border-bottom-left-radius: 50% 10%;
-      border-bottom-right-radius: 50% 10%;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     }
 
     .hero h2 {
@@ -50,8 +57,8 @@
     }
 
     .btn {
-      background-color: #fff;
-      color: #ff5500;
+      background-color: #ff5500;
+      color: #fff;
       padding: 12px 24px;
       border-radius: 4px;
       text-decoration: none;
@@ -61,36 +68,15 @@
 
     .btn:hover {
       background-color: #ff4400;
-      color: #fff;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    .photo {
-      max-width: 200px;
-      display: block;
-      margin: 0 auto;
-      border-radius: 50%;
-      margin-top: 20px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
     .about {
-      background-color: #fff;
-      color: #333;
-      padding: 40px;
-      margin-top: 40px;
-      border-radius: 4px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      background: linear-gradient(to bottom right, #b3d9ff, #0066cc);
+      padding: 60px;
+      text-align: center;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+      margin-bottom: 40px;
     }
 
     .about h2 {
@@ -101,51 +87,72 @@
     .about ul {
       list-style-type: disc;
       padding-left: 20px;
+      text-align: left;
+    }
+
+    .contact-details a {
+      color: #ff5500;
+    }
+
+    .photo {
+      max-width: 200px;
+      display: block;
+      margin: 20px auto;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    }
+
+    footer {
+      text-align: center;
+    }
+
+    footer p {
+      margin-bottom: 20px;
     }
 
     .social-icons {
-      margin-top: 40px;
-      text-align: center;
+      display: flex;
+      justify-content: center;
     }
 
     .social-icons a {
       display: inline-block;
       margin: 0 10px;
+      opacity: 0.7;
       transition: opacity 0.3s ease;
     }
 
-    .social-icons a img {
-      width: 30px;
-      height: 30px;
+    .social-icons a:hover {
+      opacity: 1;
     }
 
-    .social-icons a:hover {
-      opacity: 0.7;
+    .social-icons img {
+      width: 30px;
+      height: 30px;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>P. Jaya Prakash</h1>
+    <div class="container">
+      <h1>Welcome to My Mesmerizing Webpage</h1>
+    </div>
   </header>
 
   <section class="hero">
     <div class="container">
-      <h2>Welcome to My Webpage</h2>
-      <p>I'm currently an Undergraduate student in ECE branch, specializing in data science.</p>
+      <h2>Discover the Magic Within</h2>
+      <p>Unleash your imagination and explore the wonders of coding.</p>
       <a href="#" class="btn">View Projects</a>
     </div>
   </section>
-
-  <div class="container">
-    <img src="PHOTO.png" alt="My Photo" class="photo">
-  </div>
 
   <section class="about">
     <div class="container">
       <h2>About Me</h2>
       <ul>
+        <li>I'm currently an Undergraduate student in ECE branch, specializing in data science.</li>
         <li>I can do game mods using C#, know a bit of Python and JavaScript.</li>
         <li>I'm fluent in Telugu, Hindi, and English languages and have a basic understanding of Japanese.</li>
         <li>I have completed certifications in Azure Fundamentals, Azure AI Fundamentals, Azure Data Fundamentals, and AWS Cloud Foundation Internship.</li>
