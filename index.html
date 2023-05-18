@@ -15,7 +15,7 @@
         <li style="display: inline-block; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none; font-size: 16px;">Home</a></li>
         <li style="display: inline-block; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none; font-size: 16px;">Projects</a></li>
         <li style="display: inline-block; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none; font-size: 16px;">About</a></li>
-        <li style="display: inline-block; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none; font-size: 16px;">Contact</a></li>
+        <li style="display: inline-block; margin-right: 10px;"><a href="#" style="color: #fff; text-decoration: none; font-size: 16px;" onclick="showContactDetails()">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -36,8 +36,19 @@
   </section>
 
   <footer style="background-color: #222; padding: 20px; text-align: center;">
-    <p style="color: #fff; font-size: 14px;">&copy; 2023 My GitHub Page. All rights reserved.</p>
+    <p id="contactDetails" style="display
+:none;">
+© 2023 My GitHub Page. All rights reserved. <br>
+Contact: <a href="tel:+918309121235" style="color: #fff; text-decoration: underline;">+91 8309121235</a> |
+Email: <a href="mailto:pinnintijayaprakash2003@gmail.com" style="color: #fff; text-decoration: underline;">pinnintijayaprakash2003@gmail.com</a>
+</p>
 
   </footer>
+  <script>
+    function showContactDetails() {
+      var contactDetails = document.getElementById("contactDetails");
+      contactDetails.style.display = "block";
+    }
+  </script>
 </body>
 </html>
