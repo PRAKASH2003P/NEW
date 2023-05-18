@@ -11,47 +11,19 @@
       padding: 0;
       font-family: 'Roboto', sans-serif;
       color: #333;
+      background-color: #f9f9f9;
     }
 
-    .hero {
-      position: relative;
-      background: url('dragon.jpg') center/cover no-repeat;
-      height: 100vh;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      text-align: center;
-    }
-
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background-color: rgba(0, 0, 0, 0.5);
-    }
-
-    .hero-content {
-      z-index: 1;
-    }
-
-    .hero h1 {
-      color: #fff;
-      font-size: 48px;
-      margin-bottom: 10px;
-      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-    }
-
-    .hero p {
-      color: #fff;
-      font-size: 24px;
-      margin-bottom: 20px;
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
     header {
-      background-color: #222;
+      background-color: #333;
       padding: 20px;
+      text-align: center;
     }
 
     h1 {
@@ -63,6 +35,9 @@
 
     nav ul {
       list-style-type: none;
+      margin: 0;
+      padding: 0;
+      text-align: center;
     }
 
     nav ul li {
@@ -76,26 +51,60 @@
       font-size: 16px;
     }
 
+    section.hero {
+      background-color: #fff;
+      padding: 50px;
+      text-align: center;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    section.hero h2 {
+      font-size: 42px;
+      margin-bottom: 10px;
+      color: #333;
+    }
+
+    section.hero p {
+      font-size: 18px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #333;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #555;
+    }
+
     section.about {
       padding: 50px;
       text-align: center;
-      background-color: #4caf50;
+      background-color: #f9f9f9;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
     }
 
     section.about h2 {
       font-size: 32px;
       margin-bottom: 10px;
-      color: #fff;
+      color: #333;
     }
 
     section.about p {
       font-size: 18px;
-      color: #fff;
+      color: #555;
       margin-bottom: 20px;
     }
 
     footer {
-      background-color: #222;
+      background-color: #333;
       padding: 20px;
       text-align: center;
       color: #fff;
@@ -105,10 +114,26 @@
     footer p {
       margin: 0;
     }
-  </style>
+
+    .contact-details {
+      margin-top: 20px;
+      color: #fff;
+      font-size: 16px;
+    }
+
+    .contact-details a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+
+    .contact-details a:hover {
+      color: #aaa
+}
+</style>
+
 </head>
 <body>
-
   <header>
     <h1>Welcome to My GitHub Page</h1>
     <nav>
@@ -120,28 +145,30 @@
       </ul>
     </nav>
   </header>
-
   <section class="hero">
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <h1>Discover My Awesome Projects</h1>
+    <div class="container">
+      <h2>Discover My Awesome Projects</h2>
       <p>Check out my latest projects on GitHub and explore the world of coding.</p>
-<a href="#" class="btn">View Projects</a>
-</div>
-
+      <a href="#" class="btn">View Projects</a>
+    </div>
   </section>
   <section class="about">
-    <div>
+    <div class="container">
       <h2>About Me</h2>
       <p>I am a passionate developer who loves to build amazing web applications.</p>
     </div>
   </section>
   <footer>
-    <p id="contactDetails" style="display: none;">
-      &copy; 2023 My GitHub Page. All rights reserved. <br>
-      Contact: <a href="tel:+918309121235">+91 8309121235</a> |
-      Email: <a href="mailto:pinnintijayaprakash2003@gmail.com">pinnintijayaprakash2003@gmail.com</a>
-    </p>
+    <div class="container">
+      <p id="contactDetails" style="display: none;">
+        &copy; 2023 My GitHub Page. All rights reserved. <br>
+        Contact: <a href="tel:+918309121235">+91 8309121235</a> |
+        Email: <a href="mailto:pinnintijayaprakash2003@gmail.com">pinnintijayaprakash2003@gmail.com</a>
+      </p>
+      <div class="contact-details">
+        <a href="#" onclick="showContactDetails()">Show Contact Details</a>
+      </div>
+    </div>
   </footer>
   <script>
     function showContactDetails() {
