@@ -57,10 +57,14 @@
       color: #ff5500;
     }
 
+    .photo-section {
+      text-align: center;
+    }
+
     .photo {
       max-width: 200px;
-      display: block;
-      margin: 20px auto;
+      display: inline-block;
+      margin-top: 20px;
       border-radius: 50%;
     }
   </style>
@@ -97,17 +101,18 @@
         <li>I have completed certifications in Azure Fundamentals, Azure AI Fundamentals, Azure Data Fundamentals, and AWS Cloud Foundation Internship.</li>
         <li>I have worked on a project where we created a robotic arm using a 3D printer and controlled it using machine learning, specifically RNN.</li>
         <li>I enjoy creating mods for games and watching anime.</li>
-        <li>I have knowledge of Python, C, and C# programming  languages.</li>
-</ul>
-</div>
-
+        <li>I have knowledge of Python, C, and C# programming languages.</li>
+      </ul>
+    </div>
   </section>
+
   <section class="photo-section">
     <div class="container">
       <h2>My Photo</h2>
       <img src="PHOTO.png" alt="My Photo" class="photo">
     </div>
   </section>
+
   <footer>
     <div class="container">
       <p id="contactDetails" style="display: none;">
@@ -120,11 +125,13 @@
       </div>
     </div>
   </footer>
+
   <script>
     function showContactDetails() {
       var contactDetails = document.getElementById("contactDetails");
       contactDetails.style.display = "block";
     }
   </script>
+
 </body>
 </html>
