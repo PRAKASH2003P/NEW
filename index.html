@@ -16,10 +16,40 @@
 
     /* Add the previous CSS styles for the dark and creative theme */
 
-    .about p {
-      font-size: 18px;
-      color: #ccc;
-      margin-bottom: 20px;
+    h1, h2 {
+      color: #fff;
+    }
+
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 40px;
+    }
+
+    .hero {
+      background-color: #333;
+      padding: 60px 0;
+    }
+
+    .btn {
+      background-color: #ff5500;
+      color: #fff;
+      padding: 12px 24px;
+      border-radius: 4px;
+      text-decoration: none;
+    }
+
+    .btn:hover {
+      background-color: #ff4400;
+    }
+
+    .about {
+      background-color: #444;
+      padding: 60px 0;
+    }
+
+    .contact-details a {
+      color: #ff5500;
     }
   </style>
 </head>
@@ -65,20 +95,19 @@
       <p id="contactDetails" style="display: none;">
         &copy; 2023 My GitHub Page. All rights reserved. <br>
         Contact: <a href="tel:+918309121235">+91 8309121235</a> |
-        Email: <a href="mailto:pinnintijayaprakash2003@gmail.com">pinnintijayaprakash2003@gmail.com</a>
-      </p>
-      <div class="contact-details">
-        <a href="#" onclick="showContactDetails()">Show Contact Details</a>
-      </div>
-    </div>
-  </footer>
+Email: <a href="mailto:pinnintijayaprakash2003@gmail.com">pinnintijayaprakash2003@gmail.com</a>
+</p>
+<div class="contact-details">
+<a href="#" onclick="showContactDetails()">Show Contact Details</a>
+</div>
+</div>
 
+  </footer>
   <script>
     function showContactDetails() {
       var contactDetails = document.getElementById("contactDetails");
       contactDetails.style.display = "block";
     }
   </script>
-
 </body>
 </html>
