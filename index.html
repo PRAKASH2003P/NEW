@@ -12,6 +12,7 @@
       font-family: 'Roboto', sans-serif;
       color: #fff;
       background-color: #222;
+      overflow: hidden;
     }
 
     /* Water Theme Styles */
@@ -32,6 +33,17 @@
       right: 0;
       bottom: 0;
       z-index: -1;
+      overflow: hidden;
+    }
+
+    .bubble-container {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      overflow: hidden;
+      pointer-events: none;
     }
 
     .bubble {
@@ -40,20 +52,32 @@
       height: 20px;
       background-color: rgba(255, 255, 255, 0.5);
       border-radius: 50%;
+      pointer-events: none;
       animation: bubbleAnimation linear infinite;
-      animation-duration: 4s;
+      animation-duration: 5s;
       animation-timing-function: ease-in-out;
     }
 
     @keyframes bubbleAnimation {
       0% {
+        transform: translateY(100%);
+        opacity: 0.8;
+      }
+      25% {
         transform: translateY(0);
+        opacity: 1;
       }
       50% {
-        transform: translateY(-100%);
+        transform: translateY(-50%);
+        opacity: 0.8;
+      }
+      75% {
+        transform: translateY(0);
+        opacity: 1;
       }
       100% {
-        transform: translateY(0);
+        transform: translateY(100%);
+        opacity: 0.8;
       }
     }
 
@@ -153,38 +177,47 @@
     </div>
   </footer>
 
+  <div class="water-bg">
+    <div class="container">
+      <!-- Bubbles -->
+      <div class="bubble-container">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
+    </div>
+  </div>
+
   <script>
     function showContactDetails() {
       var contactDetails = document.getElementById("contactDetails");
       contactDetails.style.display = "block";
     }
-  </script>
 
-  <div class="water-bg">
-    <div class="container">
-      <!-- Bubbles -->
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-      <div class="bubble"></div>
-    </div>
-  </div>
+    // Randomize bubble positions
+    var bubbles = document.querySelectorAll('.bubble');
+    bubbles.forEach(function(bubble) {
+      var randomDelay = Math.random() * 5;
+      bubble.style.animationDelay = randomDelay + 's';
+    });
+  </script>
 
 </body>
 </html>
