@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Visually Appealing Webpage</title>
+  <title>Facebook Profile Page</title>
   <style>
     body {
       font-family: Arial, sans-serif;
@@ -13,14 +13,14 @@
     }
 
     header {
-      background-color: #333;
+      background-color: #1877F2;
       color: #fff;
       padding: 20px;
       text-align: center;
     }
 
     h1 {
-      font-size: 32px;
+      font-size: 24px;
       margin: 0;
     }
 
@@ -28,54 +28,13 @@
       max-width: 800px;
       margin: 0 auto;
       padding: 40px;
-    }
-
-    .hero {
-      background-color: #ff5500;
-      color: #fff;
-      padding: 60px;
-      text-align: center;
-      border-bottom-left-radius: 50% 10%;
-      border-bottom-right-radius: 50% 10%;
-    }
-
-    .hero h2 {
-      font-size: 28px;
-      margin-bottom: 20px;
-    }
-
-    .hero p {
-      font-size: 18px;
-      margin-bottom: 40px;
-    }
-
-    .btn {
       background-color: #fff;
-      color: #ff5500;
-      padding: 12px 24px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
       border-radius: 4px;
-      text-decoration: none;
-      font-size: 16px;
-      transition: background-color 0.3s ease;
+      margin-top: 40px;
     }
 
-    .btn:hover {
-      background-color: #ff4400;
-      color: #fff;
-    }
-
-    footer {
-      background-color: #333;
-      color: #fff;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    .photo {
+    .profile-pic {
       max-width: 200px;
       display: block;
       margin: 0 auto;
@@ -84,23 +43,29 @@
       box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     }
 
-    .about {
-      background-color: #fff;
-      color: #333;
-      padding: 40px;
-      margin-top: 40px;
-      border-radius: 4px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    .name {
+      text-align: center;
+      font-size: 28px;
+      margin-top: 20px;
     }
 
-    .about h2 {
-      font-size: 24px;
-      margin-bottom: 20px;
+    .bio {
+      text-align: center;
+      font-size: 16px;
+      margin-top: 10px;
     }
 
-    .about ul {
-      list-style-type: disc;
-      padding-left: 20px;
+    .info {
+      margin-top: 20px;
+    }
+
+    .info h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .info p {
+      margin-bottom: 5px;
     }
 
     .social-icons {
@@ -127,45 +92,27 @@
 <body>
 
   <header>
-    <h1>P. Jaya Prakash</h1>
+    <h1>Your Name</h1>
   </header>
 
-  <section class="hero">
-    <div class="container">
-      <h2>Welcome to My Webpage</h2>
-      <p>I'm currently an Undergraduate student in ECE branch, specializing in data science.</p>
-      <a href="#" class="btn">View Projects</a>
-    </div>
-  </section>
-
   <div class="container">
-    <img src="PHOTO.png" alt="My Photo" class="photo">
+    <img src="profile-pic.jpg" alt="Profile Picture" class="profile-pic">
+    <h2 class="name">Your Name</h2>
+    <p class="bio">Bio description</p>
+
+    <div class="info">
+      <h2>About</h2>
+      <p>Location: City, Country</p>
+      <p>Education: University Name</p>
+      <p>Work: Company Name</p>
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com"><img src="facebook.png" alt="Facebook"></a>
+      <a href="https://www.instagram.com"><img src="instagram.png" alt="Instagram"></a>
+      <a href="https://www.linkedin.com"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
   </div>
-
-  <section class="about">
-    <div class="container">
-      <h2>About Me</h2>
-      <ul>
-        <li>I can do game mods using C#, know a bit of Python and JavaScript.</li>
-        <li>I'm fluent in Telugu, Hindi, and English languages and have a basic understanding of Japanese.</li>
-        <li>I have completed certifications in Azure Fundamentals, Azure AI Fundamentals, Azure Data Fundamentals, and AWS Cloud Foundation Internship.</li>
-        <li>I have worked on a project where we created a robotic arm using a 3D printer and controlled it using machine learning, specifically RNN.</li>
-        <li>I enjoy creating mods for games and watching anime.</li>
-        <li>I have knowledge of Python, C, and C# programming languages.</li>
-      </ul>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>&copy; 2023 P. Jaya Prakash. All rights reserved.</p>
-      <div class="social-icons">
-        <a href="https://www.facebook.com/JayaPrakashPinninti0/"><img src="facebook.png" alt="Facebook"></a>
-        <a href="https://www.instagram.com/prakashjp86/?hl=en"><img src="instagram.png" alt="Instagram"></a>
-        <a href="https://www.linkedin.com/in/jaya-prakash-pinninti-8a67a0218/"><img src="linkedin.png" alt="LinkedIn"></a>
-      </div>
-    </div>
-  </footer>
 
 </body>
 </html>
