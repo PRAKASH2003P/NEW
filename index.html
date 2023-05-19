@@ -11,7 +11,7 @@
 
     body {
       font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
+      background-color: #f2f2f2;
       margin: 0;
       padding: 0;
       color: #333;
@@ -132,8 +132,20 @@
       opacity: 0.7;
     }
 
-    .social-icons a:hover img {
-      transform: scale(1.2);
+    @keyframes pulse {
+      0% {
+        transform: scale(1);
+      }
+      50% {
+        transform: scale(1.1);
+      }
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    .hero .btn {
+      animation: pulse 1s infinite;
     }
   </style>
 </head>
@@ -145,7 +157,7 @@
 
   <section class="hero">
     <div class="container">
-      <h2>Welcome to My Professional Webpage</h2>
+      <h2>Welcome to My Exciting Webpage</h2>
       <p>I'm an undergraduate student majoring in Electrical and Computer Engineering, specializing in Data Science.</p>
       <a href="#" class="btn">View Projects</a>
     </div>
